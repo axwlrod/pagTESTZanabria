@@ -1,4 +1,4 @@
-// Electricista Senatino — menú móvil (abrir/cerrar)
+// Senatino Servicios Generales — menú móvil (abrir/cerrar)
 document.getElementById('burgerBtn').addEventListener('click',function(){
   document.getElementById('navlinks').classList.toggle('open');
 });

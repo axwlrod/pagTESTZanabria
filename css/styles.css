@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Electricista Senatino — Hoja de estilos principal
+   Senatino Servicios Generales — Hoja de estilos principal
    Estructura: variables > base > navegación > hero > secciones > footer > CTA
    ========================================================================== */
 
@@ -49,7 +49,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--navy);border-bottom:1px s
 /* HERO */
 header.hero{background:var(--navy);color:#fff;padding:52px 0 44px;}
 .eyebrow-light{display:flex;align-items:center;gap:8px;color:var(--yellow);font-weight:600;font-size:13px;margin-bottom:14px;}
-h1{font-size:clamp(36px,6.5vw,58px);line-height:1.02;font-weight:700;color:#fff;max-width:13ch;}
+h1{font-size:clamp(36px,6.5vw,58px);line-height:1.02;font-weight:700;color:#fff;max-width:18ch;}
 h1 span{color:var(--yellow);}
 .sub{margin-top:14px;color:#C6D4E6;font-size:16.5px;max-width:46ch;line-height:1.55;}
 .seals{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
@@ -122,3 +122,11 @@ footer{background:#0A2140;color:#8EA3C2;padding:28px 0;text-align:center;font-si
 .fab .fabtext{display:flex;flex-direction:column;line-height:1.15;}
 .fab .fabtext small{font-size:10.5px;font-weight:500;opacity:.9;}
 .fab .fabtext strong{font-size:15px;font-weight:700;letter-spacing:.02em;}
+
+/* PUNTOS DE SERVICIOS EN LA PORTADA */
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;max-width:760px;}
+.chips li{background:var(--yellow);color:var(--navy);font-weight:600;font-size:13.5px;padding:8px 14px;border-radius:6px;}
+
+/* LISTA DENTRO DE UNA TARJETA DE SERVICIO */
+.svc ul{list-style:none;margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;}
+.svc ul li{font-size:12px;font-weight:500;color:var(--blue);background:#EAF1FA;padding:4px 9px;border-radius:4px;}
