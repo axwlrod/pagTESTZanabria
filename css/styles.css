@@ -160,9 +160,37 @@ footer{background:#0A2140;color:#8EA3C2;padding:28px 0;text-align:center;font-si
 @media(max-width:780px){.shots img{height:260px;}}
 
 /* FOTOS: portada, nosotros, galeria completa, contacto sin mapa */
-.hero-photo{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:center 30%;border-radius:8px;margin-top:36px;}
-.about-img{display:block;width:100%;height:auto;max-height:460px;object-fit:cover;object-position:center 35%;border-radius:8px;}
+.hero-photo {
+  display: block;
+  width: 100%;
+  max-width: 800px; /* Ajusta o añade un max-width si quieres que no ocupe todo el ancho */
+  height: auto;
+  max-height: 440px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 8px;
+  margin: 36px auto 0; /* Arriba: 36px, Izquierda y Derecha: auto (centra el bloque), Abajo: 0 */
+}.about-img{display:block;width:100%;height:auto;max-height:460px;object-fit:cover;object-position:center 35%;border-radius:8px;}
 .shots{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
 .shots img{height:420px;object-fit:contain;background:#EEF2F7;}
 @media(max-width:780px){.shots img{height:340px;}}
 .contact-grid{grid-template-columns:1fr;}
+
+/* GALERIA EN MOSAICO + PORTADA SIN ESTIRAR */
+.hero-photo{width:100%;max-width:750px;height:auto;max-height:none;object-fit:contain;}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:140px;gap:8px;}
+.mcell{position:relative;margin:0;min-height:0;border-radius:8px;overflow:hidden;}
+.mosaic img{width:100%;height:100%;object-fit:cover;background:#EEF2F7;border-radius:8px;}
+.mosaic .imgph{height:100%;padding:8px;}
+.m-a{grid-column:1;grid-row:1/4;}
+.m-c{grid-column:4;grid-row:1/4;}
+.m-b{grid-column:2/4;grid-row:1/3;}
+.m-d{grid-column:2/4;grid-row:3/5;}
+.m-e{grid-column:1;grid-row:4;}
+.m-f{grid-column:4;grid-row:4;}
+@media(max-width:780px){
+  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:120px;}
+  .m-a,.m-c{grid-column:auto;grid-row:span 3;}
+  .m-b,.m-d{grid-column:1/-1;grid-row:span 2;}
+  .m-e,.m-f{grid-column:auto;grid-row:span 1;}
+}

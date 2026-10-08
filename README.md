@@ -21,3 +21,11 @@ Reduce las fotos antes de subirlas (200 a 500 KB cada una).
 - Qué cubre la palabra "garantizado".
 - Si seguirá ofreciendo cámaras, cercos e intercomunicadores.
 - Cómo atiende fuera de Lima (coordinación, viáticos).
+
+## Galería en mosaico
+Cada diapositiva es un mosaico de 6 espacios (a, b, c, d, e, f). Para llenar un espacio vacío,
+reemplaza el bloque `<div class="imgph mcell m-X">...</div>` por:
+```html
+<figure class="mcell m-X"><img src="assets/img/tu-foto.jpg" alt="Descripción"></figure>
+```
+Mantén la misma letra (m-a, m-b...). Espacios altos: a y c. Espacios anchos y grandes: b y d. Pequeños: e y f.
