@@ -158,3 +158,11 @@ footer{background:#0A2140;color:#8EA3C2;padding:28px 0;text-align:center;font-si
 .dots i{width:9px;height:9px;border-radius:50%;background:#C7D0DC;}
 .dots i.on{background:var(--navy);}
 @media(max-width:780px){.shots img{height:260px;}}
+
+/* FOTOS: portada, nosotros, galeria completa, contacto sin mapa */
+.hero-photo{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:center 30%;border-radius:8px;margin-top:36px;}
+.about-img{display:block;width:100%;height:auto;max-height:460px;object-fit:cover;object-position:center 35%;border-radius:8px;}
+.shots{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.shots img{height:420px;object-fit:contain;background:#EEF2F7;}
+@media(max-width:780px){.shots img{height:340px;}}
+.contact-grid{grid-template-columns:1fr;}
