@@ -194,13 +194,3 @@ footer{background:#0A2140;color:#8EA3C2;padding:28px 0;text-align:center;font-si
   .m-b,.m-d{grid-column:1/-1;grid-row:span 2;}
   .m-e,.m-f{grid-column:auto;grid-row:span 1;}
 }
-
-/* LOGO EN EL HERO (espacio azul a la derecha del texto) */
-.hero-top{display:grid;grid-template-columns:2.9fr 1fr;gap:40px;align-items:center;}
-.hero-logo{display:flex;justify-content:flex-end;align-items:center;}
-.hero-logo img{display:block;width:100%;max-width:380px;height:auto;background:#fff;padding:22px 26px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);}
-@media(max-width:780px){
-  .hero-top{grid-template-columns:1fr;gap:28px;}
-  .hero-logo{justify-content:center;}
-  .hero-logo img{max-width:280px;}
-}
