@@ -130,3 +130,31 @@ footer{background:#0A2140;color:#8EA3C2;padding:28px 0;text-align:center;font-si
 /* LISTA DENTRO DE UNA TARJETA DE SERVICIO */
 .svc ul{list-style:none;margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;}
 .svc ul li{font-size:12px;font-weight:500;color:var(--blue);background:#EAF1FA;padding:4px 9px;border-radius:4px;}
+
+/* CHIPS COMO ENLACES + TARJETAS CON FOTO */
+.chips a{color:inherit;text-decoration:none;display:block;}
+.chips li:hover{background:#fff;}
+.svc{scroll-margin-top:90px;}
+.svc:target{outline:3px solid var(--yellow);outline-offset:-3px;}
+.svc-img{width:100%;height:170px;object-fit:cover;border-radius:6px;margin-bottom:16px;}
+.svc .imgph.svc-img{padding:8px;}
+.svc .imgph svg{margin:0;color:#9AA6B4;}
+
+/* CARRUSEL DE GALERIA */
+.carousel{margin-top:32px;}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;scrollbar-width:none;}
+.track::-webkit-scrollbar{display:none;}
+.slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;}
+.slide h3{font-size:22px;color:var(--navy);}
+.slide p{font-size:14px;color:var(--grey);margin:6px 0 16px;}
+.shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+.shots figure{position:relative;}
+.shots img{width:100%;height:320px;object-fit:cover;border-radius:8px;}
+.shots .tag{position:absolute;top:10px;left:10px;margin:0;}
+.car-ctrl{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px;}
+.car-ctrl button{width:40px;height:40px;border-radius:50%;border:1px solid var(--navy);background:#fff;color:var(--navy);font-size:22px;line-height:1;cursor:pointer;}
+.car-ctrl button:focus-visible{outline:3px solid var(--yellow);}
+.dots{display:flex;gap:8px;}
+.dots i{width:9px;height:9px;border-radius:50%;background:#C7D0DC;}
+.dots i.on{background:var(--navy);}
+@media(max-width:780px){.shots img{height:260px;}}
